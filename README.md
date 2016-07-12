@@ -1,7 +1,6 @@
 # uDacity
 ## Coursework Submission
 
-This is a coursework repository.
+The coursework/project for each part of the course is placed in its respective course folder. The course folder has the format P#-Folder Title, where '#' is the part number of the course and 'Folder Title' is the label given in the course.
 
-Please use the PX-README.md files for more coursework details, where X is the course part number. For example,
-P1-README.md for the coursework titled 'P1-Test a Perceptual Phenomenon'.
+Please use the README.md file within the respective course folder for more details on the coursework/project.
