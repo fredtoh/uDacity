@@ -1,0 +1,8 @@
+<node changeset="3468474" id="600222415" lat="1.3489530" lon="103.9329800" timestamp="2009-12-28T02:01:31Z" uid="212022" user="kiatisdn" version="1">
+    <tag k="addr:street" v="Street 81" />
+    <tag k="amenity" v="cafe" />
+    <tag k="cuisine" v="Hawker or Foodcourt, Chinese" />
+    <tag k="description" v="Cheap Chicken Rice" />
+    <tag k="name" v="Coffee Shop - Chicken Rice" />
+  </node>
+  

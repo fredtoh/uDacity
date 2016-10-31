@@ -1,0 +1,22 @@
+<way changeset="25997959" id="229882661" timestamp="2014-10-11T07:39:54Z" uid="384084" user="Kostik" version="2">
+    <nd ref="2384193410" />
+    <nd ref="2384193427" />
+    <nd ref="2384193493" />
+    <nd ref="2384193462" />
+    <nd ref="2384193428" />
+    <nd ref="2384193456" />
+    <nd ref="2384193499" />
+    <nd ref="2384193429" />
+    <nd ref="2384193461" />
+    <nd ref="2384193440" />
+    <nd ref="2384193448" />
+    <nd ref="2384193489" />
+    <nd ref="2384193410" />
+    <tag k="addr:housename" v="7 Draycott Drive" />
+    <tag k="addr:postcode" v="259421" />
+    <tag k="addr:street" v="7 Draycott Drive" />
+    <tag k="building" v="apartments" />
+    <tag k="name" v="7 Draycott Drive" />
+    <tag k="source" v="PropertyGuru" />
+  </way>
+  

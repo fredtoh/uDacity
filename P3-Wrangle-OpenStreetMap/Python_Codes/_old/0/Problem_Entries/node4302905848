@@ -1,0 +1,9 @@
+<node changeset="40741491" id="4302905848" lat="1.3046502" lon="103.8540884" timestamp="2016-07-14T15:16:29Z" uid="741163" user="JaLooNz" version="1">
+    <tag k="addr:city" v="Singapore" />
+    <tag k="addr:country" v="SG" />
+    <tag k="addr:postcode" v="209352" />
+    <tag k="addr:street" v="24, 26 &amp; 28 Dunlop Street" />
+    <tag k="name" v="Kawan Hostel" />
+    <tag k="tourism" v="hostel" />
+  </node>
+  

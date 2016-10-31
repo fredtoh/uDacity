@@ -1,0 +1,9 @@
+<node changeset="32699921" id="2900119956" lat="1.3189732" lon="103.8910540" timestamp="2015-07-17T15:15:06Z" uid="2057798" user="Sarvihepo" version="2">
+    <tag k="addr:unit" v="05-110" />
+    <tag k="addr:housenumber" v="1013" />
+    <tag k="addr:street" v="Geylang East Ave 3" />
+    <tag k="name" v="The Rebound Centre" />
+    <tag k="opening_hours" v="Mo-Fr 10:00-18:00; Sa 10:00-16:00" />
+    <tag k="shop" v="bicycle" />
+  </node>
+  

@@ -1,0 +1,78 @@
+<way changeset="25997959" id="224605071" timestamp="2014-10-11T07:42:42Z" uid="384084" user="Kostik" version="6">
+    <nd ref="2467719378" />
+    <nd ref="2467719379" />
+    <nd ref="2467719387" />
+    <nd ref="2467719386" />
+    <nd ref="2467719385" />
+    <nd ref="2467719393" />
+    <nd ref="2467719388" />
+    <nd ref="2467719395" />
+    <nd ref="2467719389" />
+    <nd ref="2467719396" />
+    <nd ref="2467719390" />
+    <nd ref="2467719398" />
+    <nd ref="2467719391" />
+    <nd ref="2467719399" />
+    <nd ref="2467719400" />
+    <nd ref="2467719401" />
+    <nd ref="2467719402" />
+    <nd ref="2467719403" />
+    <nd ref="2467719409" />
+    <nd ref="2467719404" />
+    <nd ref="2467719406" />
+    <nd ref="2467719407" />
+    <nd ref="2467719410" />
+    <nd ref="2467719412" />
+    <nd ref="2880253302" />
+    <nd ref="2467719413" />
+    <nd ref="2467719414" />
+    <nd ref="2467719415" />
+    <nd ref="2467719416" />
+    <nd ref="2467719417" />
+    <nd ref="2467719418" />
+    <nd ref="2467719419" />
+    <nd ref="2467719420" />
+    <nd ref="2467719421" />
+    <nd ref="2467719422" />
+    <nd ref="2467719423" />
+    <nd ref="2467719424" />
+    <nd ref="2467719425" />
+    <nd ref="2467719426" />
+    <nd ref="2467719427" />
+    <nd ref="2467719434" />
+    <nd ref="2467719453" />
+    <nd ref="2467719455" />
+    <nd ref="2467719584" />
+    <nd ref="2467719594" />
+    <nd ref="2467719595" />
+    <nd ref="2467719596" />
+    <nd ref="2467719598" />
+    <nd ref="2467719599" />
+    <nd ref="2467719629" />
+    <nd ref="2467719630" />
+    <nd ref="2467719631" />
+    <nd ref="2467719632" />
+    <nd ref="2467719633" />
+    <nd ref="2467719634" />
+    <nd ref="2467719635" />
+    <nd ref="2467719636" />
+    <nd ref="2467719644" />
+    <nd ref="2467719637" />
+    <nd ref="2467719638" />
+    <nd ref="1733898978" />
+    <tag k="access" v="yes" />
+    <tag k="addr:city" v="Singapore" />
+    <tag k="addr:housenumber" v="220" />
+    <tag k="addr:postcode" v="288001" />
+    <tag k="addr:street" v="Turf Club Road" />
+    <tag k="bicycle" v="yes" />
+    <tag k="foot" v="yes" />
+    <tag k="highway" v="unclassified" />
+    <tag k="horse" v="yes" />
+    <tag k="name" v="Turf Club Road" />
+    <tag k="oneway" v="yes" />
+    <tag k="phone" v="+6591086516" />
+    <tag k="surface" v="asphalt" />
+    <tag k="website" v="www.tanglinacademy.com.sg" />
+  </way>
+  

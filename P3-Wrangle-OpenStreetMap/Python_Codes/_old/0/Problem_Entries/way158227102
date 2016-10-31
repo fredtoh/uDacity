@@ -1,0 +1,21 @@
+<way changeset="35209356" id="158227102" timestamp="2015-11-10T08:25:15Z" uid="3127064" user="Duane Bong" version="7">
+    <nd ref="1704564147" />
+    <nd ref="1704564143" />
+    <nd ref="1704564145" />
+    <nd ref="1704564146" />
+    <nd ref="1704564144" />
+    <nd ref="3828172560" />
+    <nd ref="1704564140" />
+    <nd ref="1704564147" />
+    <tag k="addr:housename" v="JCube" />
+    <tag k="addr:postcode" v="609731" />
+    <tag k="addr:street" v="2 Jurong East Central 1" />
+    <tag k="building" v="yes" />
+    <tag k="building:levels" v="4" />
+    <tag k="name" v="JCube" />
+    <tag k="old_name" v="Jurong Entertainment Centre" />
+    <tag k="operator" v="CapitalMall Asia" />
+    <tag k="pedestrian" v="highway" />
+    <tag k="shop" v="mall" />
+  </way>
+  

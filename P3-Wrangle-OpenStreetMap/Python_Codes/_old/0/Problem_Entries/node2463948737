@@ -1,0 +1,13 @@
+<node changeset="25997959" id="2463948737" lat="1.2765741" lon="103.8458843" timestamp="2014-10-11T07:44:17Z" uid="384084" user="Kostik" version="6">
+    <tag k="addr:city" v="Singapore" />
+    <tag k="addr:housename" v="Tanjong Pagar MRT (Exchange)" />
+    <tag k="addr:housenumber" v="B1-40" />
+    <tag k="addr:postcode" v="069119" />
+    <tag k="addr:street" v="140 Maxwell Road" />
+    <tag k="name" v="Apple Corner" />
+    <tag k="opening_hours" v="10:00-20:00" />
+    <tag k="payment:bitcoin" v="yes" />
+    <tag k="phone" v="90259090 www.apple-corner.com" />
+    <tag k="shop" v="computer" />
+  </node>
+  

@@ -1,0 +1,13 @@
+<way changeset="13859639" id="169844052" timestamp="2012-11-13T13:45:53Z" uid="1043909" user="kuekj" version="2">
+    <nd ref="1810028559" />
+    <nd ref="1810028522" />
+    <nd ref="1810028521" />
+    <nd ref="1810028556" />
+    <nd ref="1810028559" />
+    <tag k="addr:housenumber" v="74" />
+    <tag k="addr:postcode" v="310074" />
+    <tag k="amenity" v="marketplace" />
+    <tag k="addr:street" v="Lorong 4 Toa Payoh" />
+    <tag k="name" v="Toa Payoh Vista Market" />
+  </way>
+  

@@ -1,0 +1,14 @@
+<node changeset="25997959" id="2602703422" lat="1.3029463" lon="103.8527678" timestamp="2014-10-11T07:44:18Z" uid="384084" user="Kostik" version="7">
+    <tag k="addr:city" v="Singapore" />
+    <tag k="addr:housename" v="Sim Lim Square" />
+    <tag k="addr:housenumber" v="1" />
+    <tag k="addr:postcode" v="188504" />
+    <tag k="addr:street" v="Rochor Canal Road #02-85" />
+    <tag k="name" v="Li XUE Trading" />
+    <tag k="note" v="cables, adapters, notebooks spare parts, cases, batteries, repair service" />
+    <tag k="opening_hours" v="11:00-21:00" />
+    <tag k="payment:bitcoin" v="yes" />
+    <tag k="phone" v="+65 97924315, +6563362052" />
+    <tag k="shop" v="computer" />
+  </node>
+  

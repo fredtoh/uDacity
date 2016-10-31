@@ -1,0 +1,12 @@
+<node changeset="20048028" id="2623436026" lat="1.3054604" lon="103.9048616" timestamp="2014-01-17T10:21:19Z" uid="1862015" user="BitcoinPapa" version="4">
+    <tag k="addr:city" v="Singapore" />
+    <tag k="addr:housename" v="112 Katong" />
+    <tag k="addr:housenumber" v="112" />
+    <tag k="addr:postcode" v="428802" />
+    <tag k="addr:street" v="East Coast Road #03-09" />
+    <tag k="name" v="Epitex" />
+    <tag k="payment:bitcoin" v="yes" />
+    <tag k="phone" v="+65 68730279" />
+    <tag k="shop" v="yes" />
+  </node>
+  

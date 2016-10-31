@@ -1,0 +1,17 @@
+<node changeset="29064083" id="3369890785" lat="1.3267485" lon="103.8473699" timestamp="2015-02-24T10:52:26Z" uid="2367929" user="girlinabox" version="1">
+    <tag k="addr:city" v="Singapore" />
+    <tag k="addr:housenumber" v="1" />
+    <tag k="addr:housename" v="Zhong Shan Park" />
+    <tag k="addr:postcode" v="329133" />
+    <tag k="addr:unit" v="#01-01" />
+    <tag k="addr:street" v="Jalan Rajah" />
+    <tag k="amenity" v="cafe" />
+    <tag k="cuisine" v="coffee_shop" />
+    <tag k="internet_access" v="yes" />
+    <tag k="name" v="dr. Cafe Coffee" />
+    <tag k="opening_hours" v="10:00-22:00" />
+    <tag k="phone" v="+65 6451-2802" />
+    <tag k="smoking" v="no" />
+    <tag k="website" v="http://www.dr-cafe.com.sg/" />
+  </node>
+  

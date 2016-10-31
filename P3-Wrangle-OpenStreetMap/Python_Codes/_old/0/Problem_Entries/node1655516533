@@ -1,0 +1,13 @@
+<node changeset="37862513" id="1655516533" lat="1.3017309" lon="103.8404356" timestamp="2016-03-16T06:24:52Z" uid="522960" user="twut" version="2">
+    <tag k="addr:city" v="Singapore" />
+    <tag k="addr:housename" v="OG Orchard Point" />
+    <tag k="addr:housenumber" v="160" />
+    <tag k="addr:postcode" v="238842" />
+    <tag k="addr:street" v="Orchard Road, #B1-12/13" />
+    <tag k="atm" v="yes" />
+    <tag k="name" v="Natureland" />
+    <tag k="opening_hours" v="9am to 6am" />
+    <tag k="phone" v="6235 6780" />
+    <tag k="shop" v="massage" />
+  </node>
+  

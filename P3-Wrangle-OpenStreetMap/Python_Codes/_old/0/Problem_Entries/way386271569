@@ -1,0 +1,18 @@
+<way changeset="39701897" id="386271569" timestamp="2016-06-01T04:04:51Z" uid="3065080" user="Siewjy" version="2">
+    <nd ref="3895947487" />
+    <nd ref="3895947488" />
+    <nd ref="3895947489" />
+    <nd ref="3895947490" />
+    <nd ref="3895947491" />
+    <nd ref="3895947492" />
+    <nd ref="3895947493" />
+    <nd ref="3895947494" />
+    <nd ref="3895947487" />
+    <tag k="addr:city" v="Singapore" />
+    <tag k="addr:housenumber" v="566" />
+    <tag k="addr:postcode" v="530566" />
+    <tag k="addr:street" v="Unit : #05-464,  Hougang Street 51" />
+    <tag k="building" v="residential" />
+    <tag k="name" v="566" />
+  </way>
+  

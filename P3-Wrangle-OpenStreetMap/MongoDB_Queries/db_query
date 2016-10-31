@@ -1,0 +1,37 @@
+"\n###### Number of documents"
+db.sgp.find().count()
+
+"\n###### Number of nodes"
+db.sgp.find({"type":"node"}).count()
+
+"\n###### Number of ways"
+db.sgp.find({"type":"way"}).count()
+
+"\n###### Number of unique users"
+db.sgp.distinct("created.user").length
+
+"\n###### Number of unique amenities"
+db.sgp.distinct("amenity").length
+
+"\n###### Top 10 amenities by count"
+db.sgp.aggregate([{"$match":{"amenity":{"$exists":1}}}, 
+    {"$group":{"_id":"$amenity","count":{"$sum":1}}}, 
+    {"$sort":{"count":-1}}, 
+    {"$limit":10}])
+
+"\n###### Searching for former middle school"
+var vs = db.sgp.find({"name":"Victoria School"}).toArray()
+
+"\n###### Display search result"
+vs[0]
+
+"\n###### Creating geospatial index on 'pos'"
+db.sgp.ensureIndex({"pos": "2d"})
+
+"\n###### Amenities near my middle school"
+db.sgp.find(
+         {"pos": {"$near": vs[0].pos},
+          "amenity": {"$exists": 1}, "address.street":{"$exists": 1}
+         },
+         {"_id":0, "name":1, "pos":1, "amenity": 1, "address.street": 1}
+         ).limit(2).pretty()

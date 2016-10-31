@@ -1,0 +1,21 @@
+<way changeset="37138810" id="108229624" timestamp="2016-02-11T04:12:25Z" uid="3409561" user="tpsmartcp" version="5">
+    <nd ref="1242084673" />
+    <nd ref="1242084558" />
+    <nd ref="1242084506" />
+    <nd ref="1242084633" />
+    <nd ref="1242084607" />
+    <nd ref="1242084499" />
+    <nd ref="1242084692" />
+    <nd ref="1242084604" />
+    <nd ref="1242084555" />
+    <nd ref="1242084621" />
+    <nd ref="1242084588" />
+    <nd ref="1242084667" />
+    <nd ref="1242084673" />
+    <tag k="addr:housenumber" v="699" />
+    <tag k="addr:postcode" v="530699" />
+    <tag k="addr:street" v="699 Hougang Street 52" />
+    <tag k="building" v="yes" />
+    <tag k="name" v="699" />
+  </way>
+  

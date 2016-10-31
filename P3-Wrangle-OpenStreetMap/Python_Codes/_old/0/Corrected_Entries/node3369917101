@@ -1,0 +1,16 @@
+<node changeset="31623094" id="3369917101" lat="1.3273448" lon="103.8473511" timestamp="2015-06-01T01:35:36Z" uid="88164" user="Med" version="2">
+    <tag k="addr:city" v="Singapore" />
+    <tag k="addr:housenumber" v="1" />
+    <tag k="addr:housename" v="Zhongshan Park" />
+    <tag k="addr:unit" v="#01-02" />
+    <tag k="addr:street" v="Jalan Rajah" />
+    <tag k="amenity" v="restaurant" />
+    <tag k="cuisine" v="german" />
+    <tag k="delivery" v="no" />
+    <tag k="name" v="Starker Fresh Beer" />
+    <tag k="opening_hours" v="Mo-Sa 16:00-00:00 Su 10:30-00:00" />
+    <tag k="phone" v="+65 6734 1810" />
+    <tag k="takeaway" v="yes" />
+    <tag k="website" v="http://www.starkerbeer.com/" />
+  </node>
+  

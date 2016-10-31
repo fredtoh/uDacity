@@ -1,0 +1,9 @@
+<node changeset="11907544" id="1684134054" lat="1.3264313" lon="103.8968324" timestamp="2012-06-15T18:31:05Z" uid="255802" user="cboothroyd" version="2">
+    <tag k="addr:housename" v="Ubi Techpark" />
+    <tag k="addr:housenumber" v="#05-05 (Lobby A) /#02-43 (Lobby C)" />
+    <tag k="addr:postcode" v="Singapore 408564" />
+    <tag k="addr:street" v="Blk 10 Ubi Crescent" />
+    <tag k="designation" v="Tech" />
+    <tag k="name" v="Web Synergies" />
+  </node>
+  

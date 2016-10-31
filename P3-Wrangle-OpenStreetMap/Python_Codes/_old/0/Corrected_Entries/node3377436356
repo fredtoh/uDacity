@@ -1,0 +1,16 @@
+<node changeset="29170767" id="3377436356" lat="1.3141147" lon="103.8542648" timestamp="2015-03-01T07:01:09Z" uid="2367929" user="girlinabox" version="1">
+    <tag k="addr:city" v="Singapore" />
+    <tag k="addr:housenumber" v="88" />
+    <tag k="addr:postcode" v="218374" />
+    <tag k="addr:unit" v="#01-02" />
+    <tag k="addr:street" v="Rangoon Road" />
+    <tag k="amenity" v="cafe" />
+    <tag k="cuisine" v="coffee_shop" />
+    <tag k="internet_access" v="yes" />
+    <tag k="name" v="Tamper &amp; Co" />
+    <tag k="opening_hours" v="10am-10pm" />
+    <tag k="phone" v="+65 6341 7525" />
+    <tag k="smoking" v="no" />
+    <tag k="website" v="http://www.tamperandco.com/" />
+  </node>
+  

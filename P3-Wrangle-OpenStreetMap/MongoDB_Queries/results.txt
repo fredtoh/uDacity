@@ -1,0 +1,88 @@
+MongoDB shell version: 3.2.7
+connecting to: osm
+
+###### Number of documents
+725540
+
+###### Number of nodes
+636204
+
+###### Number of ways
+89300
+
+###### Number of unique users
+1087
+
+###### Number of unique amenities
+96
+
+###### Top 10 amenities by count
+{ "_id" : "parking", "count" : 1623 }
+{ "_id" : "restaurant", "count" : 974 }
+{ "_id" : "school", "count" : 437 }
+{ "_id" : "taxi", "count" : 314 }
+{ "_id" : "place_of_worship", "count" : 281 }
+{ "_id" : "swimming_pool", "count" : 263 }
+{ "_id" : "cafe", "count" : 249 }
+{ "_id" : "fast_food", "count" : 211 }
+{ "_id" : "toilets", "count" : 171 }
+{ "_id" : "fuel", "count" : 166 }
+
+###### Searching for former middle school
+
+###### Display search result
+{
+	"_id" : ObjectId("58174da74ed0b226097a0215"),
+	"name" : "Victoria School",
+	"asset_ref" : "93201",
+	"created" : {
+		"changeset" : "36529447",
+		"user" : "JaLooNz",
+		"version" : "7",
+		"uid" : "741163",
+		"timestamp" : "2016-01-12T14:03:11Z"
+	},
+	"pos" : [
+		1.3092614,
+		103.9278707
+	],
+	"route_ref" : "31;36;43;47;48;55;135;155;196;196e;197;401",
+	"location" : "Marine Parade Road",
+	"type" : "node",
+	"id" : "410467565",
+	"highway" : "bus_stop"
+}
+
+###### Creating geospatial index on 'pos'
+{
+	"createdCollectionAutomatically" : false,
+	"numIndexesBefore" : 2,
+	"numIndexesAfter" : 2,
+	"note" : "all indexes already exist",
+	"ok" : 1
+}
+
+###### Amenities near my middle school
+{
+	"amenity" : "ice_cream",
+	"name" : "Ice Cream Chefs",
+	"pos" : [
+		1.3101987,
+		103.9184457
+	],
+	"address" : {
+		"street" : "East Coast Road"
+	}
+}
+{
+	"amenity" : "cafe",
+	"name" : "Dutch Colony Coffee Co.",
+	"pos" : [
+		1.314218,
+		103.9193777
+	],
+	"address" : {
+		"street" : "Frankel Avenue"
+	}
+}
+bye

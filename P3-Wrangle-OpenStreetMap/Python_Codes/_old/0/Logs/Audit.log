@@ -1,0 +1,139 @@
+{'Aenue': set(['Serangoon Aenue 1']),
+ 'Airport': set(['Airport Blvd']),
+ 'Ang': set(['Ang Mo Kio Ave 3',
+             'Ang Mo Kio Ave 4',
+             'Ang Mo Kio Ave 6',
+             'Ang Mo Kio St 62',
+             'Ang Mo Kio avenue 3']),
+ 'Ave': set(['Ang Mo Kio Ave 3',
+             'Ang Mo Kio Ave 4',
+             'Ang Mo Kio Ave 6',
+             'Brighton Ave',
+             'Bukit Batok East Ave 5',
+             'Clementi Ave 1',
+             'Clementi Ave 2',
+             'Geylang East Ave 3',
+             'Hillview Ave',
+             'Sengkan West Ave',
+             'Sin Min Ave',
+             'Tampines Industrial Ave 5',
+             'Ubi Ave 1',
+             'Woodlands Ave 1']),
+ 'Avebue': set(['Bayfront Avebue']),
+ 'Bayfront': set(['Bayfront Avebue']),
+ 'Blvd': set(['Airport Blvd']),
+ 'Brighton': set(['Brighton Ave']),
+ 'Bukit': set(['Bukit Batok East Ave 5', 'Bukit Timah Rd']),
+ 'Choa': set(['Choa Chu Kang Cresent']),
+ 'Clementi': set(['Clementi Ave 1', 'Clementi Ave 2', 'Clementi St 14']),
+ 'Cresent': set(['Choa Chu Kang Cresent']),
+ 'Dr': set(['Libra Dr', 'Pasir Ris Dr 6']),
+ 'Elias': set(['Elias terrace']),
+ 'Geylang': set(['Geylang East Ave 3']),
+ 'Gloucester': set(['Gloucester road']),
+ 'Gopeng': set(['Gopeng St']),
+ 'Hillview': set(['Hillview Ave']),
+ 'Hougang': set(['Hougang street 51']),
+ 'Jln': set(['Jln Bkt Ho Swee', 'Jln Pelatina']),
+ 'Jupiter': set(['Jupiter Rd']),
+ 'Jurong': set(['Jurong West St 65', 'Jurong West St 92']),
+ 'Libra': set(['Libra Dr']),
+ 'Liput': set(['Lor Liput']),
+ 'Lor': set(['Lor Ah Soo', 'Lor Liput', 'Lor Sarina', 'Lor Telok']),
+ 'Nanson': set(['Nanson road']),
+ 'Orchard': set(['Orchard Rd']),
+ 'Pasir': set(['Pasir Ris Dr 6']),
+ 'Pelatina': set(['Jln Pelatina']),
+ 'Rd': set(['Bukit Timah Rd',
+            'Jupiter Rd',
+            'Orchard Rd',
+            'Stockport Rd',
+            'Tanjong Pagar Rd',
+            'Towner Rd',
+            'Upper Thomson Rd']),
+ 'Sarina': set(['Lor Sarina']),
+ 'Sengkan': set(['Sengkan West Ave']),
+ 'Serangoon': set(['Serangoon Aenue 1']),
+ 'Sin': set(['Sin Min Ave']),
+ 'Smith': set(['Smith street']),
+ 'Soo': set(['Lor Ah Soo']),
+ 'St': set(['Ang Mo Kio St 62',
+            'Clementi St 14',
+            'Gopeng St',
+            'Jurong West St 65',
+            'Jurong West St 92']),
+ 'Stockport': set(['Stockport Rd']),
+ 'Swee': set(['Jln Bkt Ho Swee']),
+ 'Tampines': set(['Tampines Industrial Ave 5']),
+ 'Tanjong': set(['Tanjong Pagar Rd']),
+ 'Telok': set(['Lor Telok']),
+ 'Towner': set(['Towner Rd']),
+ 'Ubi': set(['Ubi Ave 1']),
+ 'Upper': set(['Upper Thomson Rd']),
+ 'Woodlands': set(['Woodlands Ave 1']),
+ 'Yuan': set(['Yuan Ching road']),
+ 'ah': set(['ah soo garden']),
+ 'avenue': set(['Ang Mo Kio avenue 3', 'serangoon avenue 2']),
+ 'chinese': set(['chinese garden road']),
+ 'garden': set(['ah soo garden']),
+ 'jalan': set(['jalan kubor']),
+ 'kubor': set(['jalan kubor']),
+ 'road': set(['Gloucester road',
+              'Nanson road',
+              'Yuan Ching road',
+              'chinese garden road']),
+ 'serangoon': set(['serangoon avenue 2']),
+ 'street': set(['Hougang street 51', 'Smith street']),
+ 'terrace': set(['Elias terrace'])}
+
+****************
+
+ah soo garden => ah soo garden
+Sengkan West Ave => Sengkang West Avenue
+Smith street => Smith street
+Jurong West St 92 => Jurong West Street 92
+Serangoon Aenue 1 => Serangoon Avenue 1
+Jupiter Rd => Jupiter Road
+Yuan Ching road => Yuan Ching road
+Gopeng St => Gopeng Street
+Lor Telok => Lorong Telok
+Choa Chu Kang Cresent => Choa Chu Kang Crescent
+Jln Pelatina => Jalan Pelatina
+Sin Min Ave => Sin Min Avenue
+Ang Mo Kio Ave 3 => Ang Mo Kio Avenue 3
+Ang Mo Kio avenue 3 => Ang Mo Kio avenue 3
+Bukit Batok East Ave 5 => Bukit Batok East Avenue 5
+jalan kubor => jalan kubor
+Lor Liput => Lorong Liput
+Ang Mo Kio Ave 6 => Ang Mo Kio Avenue 6
+Woodlands Ave 1 => Woodlands Avenue 1
+Bukit Timah Rd => Bukit Timah Road
+Stockport Rd => Stockport Road
+Jurong West St 65 => Jurong West Street 65
+Nanson road => Nanson road
+Elias terrace => Elias terrace
+Hillview Ave => Hillview Avenue
+Clementi Ave 2 => Clementi Avenue 2
+Clementi Ave 1 => Clementi Avenue 1
+Hougang street 51 => Hougang street 51
+Brighton Ave => Brighton Avenue
+chinese garden road => chinese garden road
+Lor Sarina => Lorong Sarina
+Towner Rd => Towner Road
+Airport Blvd => Airport Boulevard
+Ubi Ave 1 => Ubi Avenue 1
+serangoon avenue 2 => serangoon avenue 2
+Bayfront Avebue => Bayfront Avenue
+Lor Ah Soo => Lorong Ah Soo
+Clementi St 14 => Clementi Street 14
+Libra Dr => Libra Drive
+Orchard Rd => Orchard Road
+Jln Bkt Ho Swee => Jalan Bukit Ho Swee
+Upper Thomson Rd => Upper Thomson Road
+Geylang East Ave 3 => Geylang East Avenue 3
+Pasir Ris Dr 6 => Pasir Ris Drive 6
+Tampines Industrial Ave 5 => Tampines Industrial Avenue 5
+Tanjong Pagar Rd => Tanjong Pagar Road
+Ang Mo Kio St 62 => Ang Mo Kio Street 62
+Gloucester road => Gloucester road
+Ang Mo Kio Ave 4 => Ang Mo Kio Avenue 4

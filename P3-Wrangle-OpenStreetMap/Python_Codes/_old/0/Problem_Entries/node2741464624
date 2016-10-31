@@ -1,0 +1,10 @@
+<node changeset="21298552" id="2741464624" lat="1.2935610" lon="103.8532974" timestamp="2014-03-25T04:55:19Z" uid="39119" user="zzkt" version="1">
+    <tag k="addr:housename" v="Raffles City Shopping Centre" />
+    <tag k="addr:housenumber" v="#03-21B" />
+    <tag k="addr:street" v="252 North Bridge Road" />
+    <tag k="amenity" v="restaurant" />
+    <tag k="cuisine" v="indian" />
+    <tag k="name" v="Shahi Maharani" />
+    <tag k="website" v="http://www.shahimaharani.com/" />
+  </node>
+  

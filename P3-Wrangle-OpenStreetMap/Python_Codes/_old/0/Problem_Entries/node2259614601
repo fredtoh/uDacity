@@ -1,0 +1,10 @@
+<node changeset="25997959" id="2259614601" lat="1.3800986" lon="103.8490994" timestamp="2014-10-11T07:44:19Z" uid="384084" user="Kostik" version="2">
+    <tag k="addr:postcode" v="569830" />
+    <tag k="addr:street" v="180 Ang Mo Kio Avenue 8" />
+    <tag k="alt_name" v="NYP" />
+    <tag k="amenity" v="school" />
+    <tag k="designation" v="Polytechnic" />
+    <tag k="name" v="Nanyang Polytechnic" />
+    <tag k="source" v="My school" />
+  </node>
+  

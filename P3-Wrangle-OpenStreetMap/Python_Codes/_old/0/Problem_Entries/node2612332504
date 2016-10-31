@@ -1,0 +1,14 @@
+<node changeset="25997959" id="2612332504" lat="1.3184062" lon="103.8766178" timestamp="2014-10-11T07:44:18Z" uid="384084" user="Kostik" version="2">
+    <tag k="addr:city" v="Singapore" />
+    <tag k="addr:housename" v="Shun Li Industrial Complex" />
+    <tag k="addr:housenumber" v="705" />
+    <tag k="addr:postcode" v="387384" />
+    <tag k="addr:street" v="Sims Drive #05-12B" />
+    <tag k="name" v="Colornet Printing Technology Pte Ltd" />
+    <tag k="office" v="company" />
+    <tag k="opening_hours" v="09:00-18:00" />
+    <tag k="payment:bitcoin" v="yes" />
+    <tag k="phone" v="+65 6745 1828" />
+    <tag k="website" v="http://www.colornet.com.sg" />
+  </node>
+  

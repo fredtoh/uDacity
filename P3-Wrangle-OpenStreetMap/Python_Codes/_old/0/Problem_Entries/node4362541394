@@ -1,0 +1,9 @@
+<node changeset="41633913" id="4362541394" lat="1.2962052" lon="103.8462127" timestamp="2016-08-23T09:54:49Z" uid="4234154" user="realpxl" version="1">
+    <tag k="addr:postcode" v="179622" />
+    <tag k="addr:street" v="2 Cox Terrace Fort Canning Park" />
+    <tag k="name" v="Battlebox Visitor Centre" />
+    <tag k="name:en" v="Battlebox Visitor Centre" />
+    <tag k="tourism" v="museum" />
+    <tag k="website" v="http://www.battlebox.com.sg" />
+  </node>
+  

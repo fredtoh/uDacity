@@ -1,0 +1,13 @@
+<node changeset="39560648" id="687602981" lat="1.2986393" lon="103.7748959" timestamp="2016-05-25T16:44:30Z" uid="4011836" user="PrivatePansy" version="6">
+    <tag k="addr:city" v="Singapore" />
+    <tag k="addr:housename" v="31 Lower Kent Ridge Rd, Singapore" />
+    <tag k="addr:postcode" v="119078" />
+    <tag k="addr:street" v="31 Lower Kent Ridge Rd" />
+    <tag k="amenity" v="fast_food" />
+    <tag k="drive_through" v="no" />
+    <tag k="name" v="Subway" />
+    <tag k="phone" v="+65 6775 5285" />
+    <tag k="smoking" v="no" />
+    <tag k="takeaway" v="yes" />
+  </node>
+  

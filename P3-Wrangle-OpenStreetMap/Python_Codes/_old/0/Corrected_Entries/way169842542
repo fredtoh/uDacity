@@ -1,0 +1,13 @@
+<way changeset="38820186" id="169842542" timestamp="2016-04-23T19:57:35Z" uid="3867174" user="naughty13" version="3">
+    <nd ref="1810006350" />
+    <nd ref="1810006340" />
+    <nd ref="1810006337" />
+    <nd ref="1810006348" />
+    <nd ref="1810006350" />
+    <tag k="addr:city" v="Singapore" />
+    <tag k="addr:country" v="SG" />
+    <tag k="addr:housenumber" v="23" />
+    <tag k="addr:street" v="Merchant Road" />
+    <tag k="addr:housename" v="Park Regis Singapore" />
+    <tag k="building" v="yes" />
+  </way>

@@ -1,0 +1,18 @@
+<way changeset="25997959" id="229882659" timestamp="2014-10-11T07:42:41Z" uid="384084" user="Kostik" version="2">
+    <nd ref="2384193432" />
+    <nd ref="2384193409" />
+    <nd ref="2384193396" />
+    <nd ref="2384193419" />
+    <nd ref="2384193434" />
+    <nd ref="2384193455" />
+    <nd ref="2384193416" />
+    <nd ref="2384193399" />
+    <nd ref="2384193432" />
+    <tag k="addr:housename" v="The Arc at Draycott" />
+    <tag k="addr:postcode" v="259420" />
+    <tag k="addr:street" v="5 Draycott Drive" />
+    <tag k="building" v="apartments" />
+    <tag k="name" v="The Arc at Draycott" />
+    <tag k="source" v="PropertyGuru" />
+  </way>
+  

@@ -1,0 +1,9 @@
+<node changeset="39865516" id="3101563328" lat="1.3327564" lon="103.8476464" timestamp="2016-06-07T16:28:55Z" uid="4080321" user="Vincent Hwee" version="3">
+    <tag k="addr:unit" v="#02-55" />
+    <tag k="addr:postcode" v="310520" />
+    <tag k="addr:housenumber" v="520" />
+    <tag k="addr:street" v="Lorong 6 Toa Payoh" />
+    <tag k="amenity" v="post_office" />
+    <tag k="name" v="Toa Payoh Central Post Office" />
+  </node>
+  

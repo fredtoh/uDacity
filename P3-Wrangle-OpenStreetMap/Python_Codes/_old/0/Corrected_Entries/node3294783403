@@ -1,0 +1,11 @@
+<node changeset="28212671" id="3294783403" lat="1.3330948" lon="103.7743511" timestamp="2015-01-17T16:13:32Z" uid="2005700" user="yoonghm" version="1">
+    <tag k="addr:city" v="Singapore" />
+    <tag k="addr:unit" v="Blk 58-01-09" />
+    <tag k="addr:postcode" v="599489" />
+    <tag k="addr:housenumber" v="535" />
+    <tag k="addr:street" v="Clementi Road" />
+    <tag k="amenity" v="cafe" />
+    <tag k="cuisine" v="coffee_shop" />
+    <tag k="name" v="The Coffee Bean &amp; Tea Leaf" />
+  </node>
+  

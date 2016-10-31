@@ -1,0 +1,20 @@
+<way changeset="11497251" id="162094514" timestamp="2012-05-04T13:14:55Z" uid="673743" user="hiddenAce" version="2">
+    <nd ref="1740286654" />
+    <nd ref="1740286655" />
+    <nd ref="1740286661" />
+    <nd ref="1740286659" />
+    <nd ref="1740286651" />
+    <nd ref="1740286652" />
+    <nd ref="1740286656" />
+    <nd ref="1740286662" />
+    <nd ref="1740286658" />
+    <nd ref="1740286660" />
+    <nd ref="1740286653" />
+    <nd ref="1740286657" />
+    <nd ref="1740286654" />
+    <tag k="addr:street" v="Bukit Batok Street 25" />
+    <tag k="addr:postcode" v="656289" />
+    <tag k="building" v="residential" />
+    <tag k="addr:housenumber" v="288G" />
+  </way>
+  

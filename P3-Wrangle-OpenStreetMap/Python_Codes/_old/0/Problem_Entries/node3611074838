@@ -1,0 +1,10 @@
+<node changeset="32143093" id="3611074838" lat="1.3762017" lon="103.9554399" timestamp="2015-06-22T16:49:44Z" uid="3005723" user="Durden" version="2">
+    <tag k="addr:city" v="Singapore" />
+    <tag k="addr:housename" v="Ehub" />
+    <tag k="addr:housenumber" v="#02-106" />
+    <tag k="addr:postcode" v="519599" />
+    <tag k="addr:street" v="1 Pasir Ris Close" />
+    <tag k="amenity" v="cafe" />
+    <tag k="name" v="Coffee Bean" />
+  </node>
+  

@@ -1,0 +1,14 @@
+<node changeset="20048073" id="2625676020" lat="1.3051226" lon="103.9051674" timestamp="2014-01-17T10:24:58Z" uid="1862015" user="BitcoinPapa" version="6">
+    <tag k="addr:city" v="Singapore" />
+    <tag k="addr:housename" v="I12 Katong" />
+    <tag k="addr:housenumber" v="112" />
+    <tag k="addr:postcode" v="428802" />
+    <tag k="addr:unit" v="#03-14" />
+    <tag k="addr:street" v="East Coast Road" />
+    <tag k="name" v="Window Story Pte Ltd" />
+    <tag k="payment:bitcoin" v="yes" />
+    <tag k="phone" v="+65 6604 7180" />
+    <tag k="shop" v="furnishing_products" />
+    <tag k="website" v="http://www.windowstory.asia/" />
+  </node>
+  

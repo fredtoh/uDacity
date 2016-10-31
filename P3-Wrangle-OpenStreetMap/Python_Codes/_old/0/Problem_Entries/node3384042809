@@ -1,0 +1,15 @@
+<node changeset="33505089" id="3384042809" lat="1.3316134" lon="103.8899536" timestamp="2015-08-22T13:25:11Z" uid="1962477" user="jc67" version="5">
+    <tag k="addr:city" v="Singapore" />
+    <tag k="addr:housenumber" v="61" />
+    <tag k="addr:postcode" v="408727" />
+    <tag k="addr:street" v="Ubi Road 1 #01-23" />
+    <tag k="name" v="Organic 7 Days (Green Capsule)" />
+    <tag k="note" v="They accepting bitcoins only at retail location right now. Not at website yet." />
+    <tag k="opening_hours" v="11am - 5pm" />
+    <tag k="operator" v="CoinPip" />
+    <tag k="payment:bitcoin" v="yes" />
+    <tag k="phone" v="+6567027009" />
+    <tag k="shop" v="yes" />
+    <tag k="website" v="http://www.organic7days.com/" />
+  </node>
+  

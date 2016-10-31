@@ -1,0 +1,10 @@
+<node changeset="40741491" id="4302905954" lat="1.3015691" lon="103.8522441" timestamp="2016-07-14T15:16:14Z" uid="741163" user="JaLooNz" version="1">
+    <tag k="addr:city" v="Singapore" />
+    <tag k="addr:country" v="SG" />
+    <tag k="addr:postcode" v="189641" />
+    <tag k="addr:unit" v="169-A/B/D; 171-A/B/C/D" />
+    <tag k="addr:street" v="Bencoolen Street" />
+    <tag k="name" v="Hawaii Hostel" />
+    <tag k="tourism" v="hostel" />
+  </node>
+  

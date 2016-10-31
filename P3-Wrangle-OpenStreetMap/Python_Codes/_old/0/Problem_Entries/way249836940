@@ -1,0 +1,17 @@
+<way changeset="19264373" id="249836940" timestamp="2013-12-04T00:16:36Z" uid="329126" user="fusionstream" version="1">
+    <nd ref="2563854925" />
+    <nd ref="2563854926" />
+    <nd ref="2563854927" />
+    <nd ref="2563854928" />
+    <nd ref="2563854929" />
+    <nd ref="2563854930" />
+    <nd ref="2563854925" />
+    <tag k="addr:postcode" v="486975" />
+    <tag k="addr:street" v="535 Upper Changi Road" />
+    <tag k="amenity" v="place_of_worship" />
+    <tag k="building" v="yes" />
+    <tag k="denomination" v="presbyterian" />
+    <tag k="name" v="Zion Presbyterian Church" />
+    <tag k="religion" v="christian" />
+  </way>
+  

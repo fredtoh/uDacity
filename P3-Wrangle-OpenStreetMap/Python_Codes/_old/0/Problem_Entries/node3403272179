@@ -1,0 +1,12 @@
+<node changeset="29556199" id="3403272179" lat="1.3320116" lon="103.8909910" timestamp="2015-03-18T06:16:55Z" uid="1862015" user="BitcoinPapa" version="2">
+    <tag k="addr:city" v="Singapore" />
+    <tag k="addr:postcode" v="408730" />
+    <tag k="addr:street" v="67, Ubi road 1, Oxley Biz Hub 1, #07-08" />
+    <tag k="amenity" v="community_centre" />
+    <tag k="name" v="Games Garage" />
+    <tag k="operator" v="CoinPip" />
+    <tag k="payment:bitcoin" v="yes" />
+    <tag k="phone" v="+6562946445" />
+    <tag k="website" v="http://gamesgaragesg.wix.com/games-garage" />
+  </node>
+  

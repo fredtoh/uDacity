@@ -1,0 +1,11 @@
+<node changeset="40741491" id="4302906061" lat="1.3036709" lon="103.8595842" timestamp="2016-07-14T15:16:21Z" uid="741163" user="JaLooNz" version="1">
+    <tag k="addr:city" v="Singapore" />
+    <tag k="addr:country" v="SG" />
+    <tag k="addr:postcode" v="198737" />
+    <tag k="addr:street" v="769, 771, 773 &amp; 775 North Bridge Road" />
+    <tag k="brand" v="Hotel Clover" />
+    <tag k="name" v="Hotel Clover (North Bridge Road)" />
+    <tag k="tourism" v="hotel" />
+    <tag k="website" v="www.hotelclover.com.sg" />
+  </node>
+  

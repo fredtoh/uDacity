@@ -1,0 +1,10 @@
+<node changeset="40741491" id="4302906096" lat="1.3047409" lon="103.8546594" timestamp="2016-07-14T15:16:34Z" uid="741163" user="JaLooNz" version="1">
+    <tag k="addr:city" v="Singapore" />
+    <tag k="addr:country" v="SG" />
+    <tag k="addr:postcode" v="208804" />
+    <tag k="addr:unit" v="43A; 43B; 43C" />
+    <tag k="addr:street" v="Jalan Besar" />
+    <tag k="name" v="Meriton Hotel" />
+    <tag k="tourism" v="hotel" />
+  </node>
+  

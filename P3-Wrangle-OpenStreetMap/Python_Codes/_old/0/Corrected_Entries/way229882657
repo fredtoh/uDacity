@@ -1,0 +1,19 @@
+<way changeset="25997959" id="229882657" timestamp="2014-10-11T07:39:52Z" uid="384084" user="Kostik" version="2">
+    <nd ref="2384193474" />
+    <nd ref="2384193405" />
+    <nd ref="2384193449" />
+    <nd ref="2384193431" />
+    <nd ref="2384193398" />
+    <nd ref="2384193435" />
+    <nd ref="2384193422" />
+    <nd ref="2384193406" />
+    <nd ref="2384193474" />
+    <tag k="addr:housename" v="38th Draycott Drive" />
+    <tag k="addr:postcode" v="259428" />
+    <tag k="addr:housenumber" v="38" />
+    <tag k="addr:street" v="Draycott Drive" />
+    <tag k="building" v="apartments" />
+    <tag k="name" v="38th Draycott Drive" />
+    <tag k="source" v="propertyguru" />
+  </way>
+  

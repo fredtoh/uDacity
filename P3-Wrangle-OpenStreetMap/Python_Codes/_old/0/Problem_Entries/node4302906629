@@ -1,0 +1,11 @@
+<node changeset="40741491" id="4302906629" lat="1.2834496" lon="103.8439035" timestamp="2016-07-14T15:17:02Z" uid="741163" user="JaLooNz" version="1">
+    <tag k="addr:city" v="Singapore" />
+    <tag k="addr:country" v="SG" />
+    <tag k="addr:postcode" v="059222" />
+    <tag k="addr:street" v="61A/B &amp; 63A/B Pagoda Street" />
+    <tag k="brand" v="5footway.inn" />
+    <tag k="name" v="5footway.inn (Chinatown 1)" />
+    <tag k="tourism" v="hotel" />
+    <tag k="website" v="www.5footwayinn.com" />
+  </node>
+  

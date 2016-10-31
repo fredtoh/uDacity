@@ -1,0 +1,12 @@
+<node changeset="37862430" id="1660450722" lat="1.3015259" lon="103.8403485" timestamp="2016-03-16T06:19:33Z" uid="522960" user="twut" version="2">
+    <tag k="addr:city" v="Singapore" />
+    <tag k="addr:housenumber" v="160" />
+    <tag k="addr:postcode" v="238842" />
+    <tag k="addr:street" v="Orchard Road, #K-02/03" />
+    <tag k="amenity" v="cafe" />
+    <tag k="cuisine" v="Western" />
+    <tag k="name" v="O' Coffee Club" />
+    <tag k="opening_hours" v="9am to 10pm" />
+    <tag k="phone" v="67333761" />
+  </node>
+  
