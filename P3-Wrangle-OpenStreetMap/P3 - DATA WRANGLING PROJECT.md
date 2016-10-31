@@ -5,8 +5,9 @@
 
 Singapore is a multi-racial and multi-cultural nation with a population of around 4 million, located in Southeast Asia. It is an island city-state,   occupying merely 278 square miles of land area, which makes it one of the most densely-populated nation in the world.
 
-I chose Singapore for this project because I grew up there. With my familiarity with this area, I thought the exploration using MongoDB will be very interesting and exciting. I downloaded the OSM file by sending the following web query:
-`http://overpass-api.de/api/map?bbox=103.6691,1.2000,104.0817,1.4253`
+I chose Singapore for this project because I grew up there. With my familiarity with this area, I thought the exploration using MongoDB will be very interesting and exciting. I downloaded the OSM file by sending the following web query[^Overpass]:
+`http://overpass-api.de/api/map?bbox=103.6691,1.2000,104.0817,1.4253` 
+[^Overpass]: Web Query. In _Overpass-API_. Retrieved September 12, 2016, from <http://overpass-api.de/api/map?bbox=103.6691,1.2000,104.0817,1.4253>
 
 ## <a name="street-name-format"></a>1. STREET NAME FORMAT
 
@@ -17,7 +18,9 @@ I noticed several problems with the data regarding street names as I began with 
 
 Numerals *(and occasionally an alphabet)* may follow after the street type, (e.g. _Hougang Street **51**_). These names indicate that there are more than one branches bearing the same street name.
 
-These two formats display the multi-cultural aspect of Singapore. The first format not only reflects the modern day Singapore as an English-speaking nation, but also its colonial history under the British rule between the years 1819 and 1965. The second format reflects its rich Malayan heritage. The three most common street types associated with the second format from the dataset are: _Jalan_ (which translates to 'street' in English), _Lorong_ ('lane') and _Taman_ ('park'). Others include _Kampong_, _Lengkong_ and _Bahru_.
+These two formats display the multi-cultural aspect of Singapore. The first format not only reflects the modern day Singapore as an English-speaking nation, but also its colonial history under the British rule[^History] between the years 1819 and 1942. The second format reflects its rich Malayan heritage. The three most common street types associated with the second format from the dataset are: _Jalan_ (which translates to 'street' in English), _Lorong_ ('lane') and _Taman_ ('park'). Others include _Kampong_, _Lengkong_ and _Bahru_.
+
+[^History]: History of the Reuplic of Singapore. In _Wikipedia._ Retrieved October 31, 2016, from <https://en.wikipedia.org/wiki/History_of_the_Republic_of_Singapore>
 
 ## 2. PROBELMS ENCOUNTERED
 
@@ -265,7 +268,9 @@ As a side note, I see that this record has neither an `"address"` nor an `"ameni
 
 ### Geospatial Feature
 
-From MongoDB documentation, I gather that I should index the `"pos"` field with the parameter `"2d"`. Then I can use the `"$near"` operator to perform proximity search.  
+From MongoDB documentation[^Geospatial], I gather that I should index the `"pos"` field with the parameter `"2d"`. Then I can use the `"$near"` operator to perform proximity search. 
+
+[^Geospatial]: Create a 2d Index. In _MongoDB_. Retrieved October 28, 2016, from <https://docs.mongodb.com/v3.2/tutorial/build-a-2d-index/>
 
 ###### Creating geospatial index on the 'pos' field.
 ```mongo
@@ -316,4 +321,10 @@ Although I am not familiar with these two establishments, _Ice Cream Chefs_ and 
 
 The open street map data for Singapore is no doubt "dirty". For example, when I search for my middle school, its lack of the `"address"` field exhibits the lack of completeness in the dataset. 
 
-On the other hand, I learn this is where a NoSQL database with a dynamic schema, like MongoDB, shows its strength. It means that I am not required to ensure the records/documents conform to a strict, pre-defined schema when creating the database. For me, it means I could avoid the organizational nightmare of creating tables after tables of data in order to build a relational database that works. But as I learn from MongoDB documentation, in the realm of agile development, where the schema of the database changes frequently and fast, a NoSQL database triumphs over relational database in terms of speed and reliability.
+On the other hand, I learn this is where a NoSQL database with a dynamic schema[^NoSQL], like MongoDB, shows its strength. It means that I am not required to ensure the records/documents conform to a strict, pre-defined schema when creating the database. For me, it means I could avoid the organizational nightmare of creating tables after tables of data in order to build a relational database that works. But as I learn from MongoDB documentation, in the realm of agile development[^Agile], where the schema of the database changes frequently and fast, a NoSQL database triumphs over relational database in terms of speed and reliability.
+
+[^NoSQL]: NoSQL Databases Explained. In _MongoDB_. Retrieved October 29, 2016, from <https://www.mongodb.com/nosql-explained>
+
+[^Agile]: Agile Development. In _MongoDB_. Retrieved October 29, 2016, from <https://www.mongodb.com/agile-development>
+
+## REFERENCES
