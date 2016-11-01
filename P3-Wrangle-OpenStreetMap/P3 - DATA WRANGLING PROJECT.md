@@ -3,7 +3,7 @@
 
 ## 0. AN OVERVIEW OF SINGAPORE
 
-Singapore is a multi-racial and multi-cultural nation with a population of around 4 million, located in Southeast Asia. It is an island city-state,   occupying merely 278 square miles of land area, which makes it one of the most densely-populated nation in the world.
+Singapore is a multi-racial and multi-cultural nation with a population of around 5.6 million, located in Southeast Asia. It is an island city-state,   occupying merely 278 square miles of land area, which makes it one of the most densely-populated nation in the world.
 
 I chose Singapore for this project because I grew up there. With my familiarity with this area, I thought the exploration using MongoDB will be very interesting and exciting. I downloaded the OSM file by sending the following web query:
 `http://overpass-api.de/api/map?bbox=103.6691,1.2000,104.0817,1.4253` 
@@ -328,12 +328,14 @@ On the other hand, I learn this is where a NoSQL database with a dynamic schema,
 
 ## REFERENCES
 
-1. Web Query. In _Overpass-API_. Retrieved September 12, 2016, from <http://overpass-api.de/api/map?bbox=103.6691,1.2000,104.0817,1.4253>
+1. Singapore. In _Wikipedia_. Retrieved October 31, 2016, from <https://en.wikipedia.org/wiki/Singapore>
 
-2. History of the Reuplic of Singapore. In _Wikipedia._ Retrieved October 31, 2016, from <https://en.wikipedia.org/wiki/History_of_the_Republic_of_Singapore>
+2. Web Query. In _Overpass-API_. Retrieved September 12, 2016, from <http://overpass-api.de/api/map?bbox=103.6691,1.2000,104.0817,1.4253>
 
-3. Create a 2d Index. In _MongoDB_. Retrieved October 28, 2016, from <https://docs.mongodb.com/v3.2/tutorial/build-a-2d-index/>
+3. History of the Reuplic of Singapore. In _Wikipedia_. Retrieved October 31, 2016, from <https://en.wikipedia.org/wiki/History_of_the_Republic_of_Singapore>
 
-4. NoSQL Databases Explained. In _MongoDB_. Retrieved October 29, 2016, from <https://www.mongodb.com/nosql-explained>
+4. Create a 2d Index. In _MongoDB_. Retrieved October 28, 2016, from <https://docs.mongodb.com/v3.2/tutorial/build-a-2d-index/>
 
-5. Agile Development. In _MongoDB_. Retrieved October 29, 2016, from <https://www.mongodb.com/agile-development>
+5. NoSQL Databases Explained. In _MongoDB_. Retrieved October 29, 2016, from <https://www.mongodb.com/nosql-explained>
+
+6. Agile Development. In _MongoDB_. Retrieved October 29, 2016, from <https://www.mongodb.com/agile-development>
