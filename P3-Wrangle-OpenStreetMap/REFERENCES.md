@@ -4,13 +4,19 @@
 
 2. Web Query. In _Overpass-API_. Retrieved September 12, 2016, from <http://overpass-api.de/api/map?bbox=103.6691,1.2000,104.0817,1.4253>
 
-3. History of the Reuplic of Singapore. In _Wikipedia._ Retrieved October 31, 2016, from <https://en.wikipedia.org/wiki/History_of_the_Republic_of_Singapore>
+3. History of the Reuplic of Singapore. In _Wikipedia_. Retrieved October 31, 2016, from <https://en.wikipedia.org/wiki/History_of_the_Republic_of_Singapore>
 
 4. Create a 2d Index. In _MongoDB_. Retrieved October 28, 2016, from <https://docs.mongodb.com/v3.2/tutorial/build-a-2d-index/>
 
-5. NoSQL Databases Explained. In _MongoDB_. Retrieved October 29, 2016, from <https://www.mongodb.com/nosql-explained>
+5. The Rise of Crowdsourcing (2006, June 1). In _Wired_. Retrieved November 7, 2016, from <https://www.wired.com/2006/06/crowds/>
 
-6. Agile Development. In _MongoDB_. Retrieved October 29, 2016, from <https://www.mongodb.com/agile-development>
+6.  Gamification. IN _Wikipedia_. Retrieved November 7, 2016, from <https://en.wikipedia.org/wiki/Gamification>
+
+7. "Ooohh Piece of Candy - Family Guy". _Unknown source_. Retrieved November 7, 2016, from <https://s-media-cache-ak0.pinimg.com/236x/42/cd/09/42cd09f10b093e88de8a9aee5f0dbe3f.jpg>
+
+8. NoSQL Databases Explained. In _MongoDB_. Retrieved October 29, 2016, from <https://www.mongodb.com/nosql-explained>
+
+9. Agile Development. In _MongoDB_. Retrieved October 29, 2016, from <https://www.mongodb.com/agile-development>
 
 
 #### OTHER WEB REFERENCES

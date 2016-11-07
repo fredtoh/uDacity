@@ -20,6 +20,7 @@ Numerals *(and occasionally an alphabet)* may follow after the street type, (e.g
 These two formats display the multi-cultural aspect of Singapore. The first format not only reflects the modern day Singapore as an English-speaking nation, but also its colonial history under the British rule between the years 1819 and 1942. The second format reflects its rich Malayan heritage. The three most common street types associated with the second format from the dataset are: _Jalan_ (which translates to 'street' in English), _Lorong_ ('lane') and _Taman_ ('park'). Others include _Kampong_, _Lengkong_ and _Bahru_.
 
 <div style="page-break-after: always;"></div>
+
 ## 2. PROBELMS ENCOUNTERED
 
 The problems I have encountered during the data-cleaning process include: 
@@ -112,6 +113,7 @@ I face with additional challenges for the following situation:
 * "Saint" streets (e.g. _St. Andrew's Road_, _St. George's Lane_)
 
 <div style="page-break-after: always;"></div>
+
 ###### Special Capitalization
 
 For street name capitalization, I typically would just use `string.capwords()`. 
@@ -188,6 +190,7 @@ $ mongoimport -d osm -c sgp --file sinagpore.xml.json
 ```
 
 <div style="page-break-after: always;"></div>
+
 ### Queries
 ###### Number of documents
 ```mongo
@@ -214,7 +217,9 @@ $ mongoimport -d osm -c sgp --file sinagpore.xml.json
 > db.sgp.distinct("amenity").length
 96
 ```
+
 <div style="page-break-after: always;"></div>
+
 ###### Top 10 amentities by count
 ```mongo                                                
 > db.sgp.aggregate([{"$match":{"amenity":{"$exists":1}}}, 
@@ -232,13 +237,13 @@ $ mongoimport -d osm -c sgp --file sinagpore.xml.json
 { "_id" : "toilets", "count" : 171 }
 { "_id" : "fuel", "count" : 166 }
 
-```
+```  
 
-## 4. ADDITIONAL IDEA
+## 4. FURTHER EXPLORATION
 
 I want to explore the geospatial feature of MongoDB. The question I have in my mind is this: _What amenities are nearby my former middle school?_
 
-First, I want to inspect the information that the document has on my former middle school, _Victoria School_. I am storing the query result to a variable
+First, I want to inspect the information that the document has on my former middle school, _Victoria School_. I am storing this query result to the variable **vs** so that I can retrieve the data later.
 
 ```mongo
 > var vs = db.sgp.find({"name":"Victoria School"}).toArray()
@@ -273,6 +278,7 @@ As a side note, I see that this record has neither an `"address"` nor an `"ameni
 From MongoDB documentation, I gather that I should index the `"pos"` field with the parameter `"2d"`. Then I can use the `"$near"` operator to perform proximity search. 
 
 <div style="page-break-after: always;"></div>
+
 ###### Creating geospatial index on the 'pos' field.
 ```mongo
 > db.sgp.ensureIndex({"pos": "2d"})
@@ -316,14 +322,30 @@ Below is the query on amenities near my middle school. I am limiting the query t
 	}
 }
 ```
+
 <div style="page-break-after: always;"></div>
+
 Although I am not familiar with these two establishments, _Ice Cream Chefs_ and _Dutch Colony Coffee Co._, I can vouch that the streets, _East Coast Road_ and _Frankel Avenue_, are pretty close to my school along _Marine Parade Road_.
 
-## 5. CONCLUSION                        
+## 5. ADDITIONAL IDEA TO IMPROVE THE DATA QUALITY
 
-The open street map data for Singapore is no doubt "dirty". For example, when I search for my middle school, its lack of the `"address"` field exhibits the lack of completeness in the dataset. 
+#### CROWDSOURCING
 
-On the other hand, I learn this is where a NoSQL database with a dynamic schema, like MongoDB, shows its strength. It means that I am not required to ensure the records/documents conform to a strict, pre-defined schema when creating the database. For me, it means I could avoid the organizational nightmare of creating tables after tables of data in order to build a relational database that works. But as I learn from MongoDB documentation, in the realm of agile development, where the schema of the database changes frequently and fast, a NoSQL database triumphs over relational database in terms of speed and reliability.
+Crowdsourcing is a powerful way that reaches out to the masses to get external help for "free". It has gained its place in the web service industry over the years. It helps to assume that the dataset I have here is hosted through a web service, although I do not think it is necessary to do so.
+
+By means of gamification, users may participate in adding new entries/documents to the dataset as well as improving data accuracy, consistency and completeness of existing ones. The idea is to use an incentive-driven approach to encourage users to participate in the quality improvement process. So, each time the user does something that improves the dataset, the user gains points. With enough points, the user may earn accolades, and their achievements may get showcased among other ranked users. For paid services, participation may be further tiered using a points-for-rewards approach.
+
+In a crowdsourcing environment, issues such as users entering inaccurate, inconsistent or, in general, poor quality information, is expected to be self-correcting.
+
+Thus, I think the biggest issue is how to ensure success in a crowdsourcing environment. In short, I think it depends on how willing the users are to volunteer and I think the secret ingredient to getting users to volunteer is making the participation fun and useful.
+
+![Ooohh-Piece-of-Candy_Family-Guy](https://s-media-cache-ak0.pinimg.com/236x/42/cd/09/42cd09f10b093e88de8a9aee5f0dbe3f.jpg)
+
+<div style="page-break-after: always;"></div>
+
+## 6. CONCLUSION                        
+
+A NoSQL database, like MongoDB, has a dynamic schema. When I search the dataset for the document about my middle school, its lack of the `"address"` field does not cause the database to break. I enjoy this dynamic schema feature because it means that I am not required to ensure the records/documents conform to a strict, pre-defined schema when creating the database. For me, it means I could avoid the organizational nightmare of creating tables after tables of data in order to build a relational database that works. But as I learn from MongoDB documentation, in the realm of agile development, where the schema of the database changes frequently and fast, a NoSQL database triumphs over relational database in terms of speed and reliability.
 
 
 ## REFERENCES
@@ -336,6 +358,13 @@ On the other hand, I learn this is where a NoSQL database with a dynamic schema,
 
 4. Create a 2d Index. In _MongoDB_. Retrieved October 28, 2016, from <https://docs.mongodb.com/v3.2/tutorial/build-a-2d-index/>
 
-5. NoSQL Databases Explained. In _MongoDB_. Retrieved October 29, 2016, from <https://www.mongodb.com/nosql-explained>
+5. The Rise of Crowdsourcing (2006, June 1). In _Wired_. Retrieved November 7, 2016, from <https://www.wired.com/2006/06/crowds/>
 
-6. Agile Development. In _MongoDB_. Retrieved October 29, 2016, from <https://www.mongodb.com/agile-development>
+6.  Gamification. IN _Wikipedia_. Retrieved November 7, 2016, from <https://en.wikipedia.org/wiki/Gamification>
+
+7. "Ooohh Piece of Candy - Family Guy". _Unknown source_. Retrieved November 7, 2016, from <https://s-media-cache-ak0.pinimg.com/236x/42/cd/09/42cd09f10b093e88de8a9aee5f0dbe3f.jpg>
+
+8. NoSQL Databases Explained. In _MongoDB_. Retrieved October 29, 2016, from <https://www.mongodb.com/nosql-explained>
+
+9. Agile Development. In _MongoDB_. Retrieved October 29, 2016, from <https://www.mongodb.com/agile-development>
+
