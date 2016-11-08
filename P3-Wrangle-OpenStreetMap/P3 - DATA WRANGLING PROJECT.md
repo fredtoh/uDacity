@@ -1,16 +1,18 @@
 # P3 - DATA WRANGLING PROJECT
 ## OPEN STREETMAP (OSM): SINGAPORE
 
-## 0. AN OVERVIEW OF SINGAPORE
+## 1. AN OVERVIEW OF SINGAPORE
 
 Singapore is a multi-racial and multi-cultural nation with a population of around 5.6 million, located in Southeast Asia. It is an island city-state,   occupying merely 278 square miles of land area, which makes it one of the most densely-populated nation in the world.
 
 I chose Singapore for this project because I grew up there. With my familiarity with this area, I thought the exploration using MongoDB will be very interesting and exciting. I downloaded the OSM file by sending the following web query:
 `http://overpass-api.de/api/map?bbox=103.6691,1.2000,104.0817,1.4253` 
 
-## <a name="street-name-format"></a>1. STREET NAME FORMAT
+## 2. PROBELMS ENCOUNTERED
 
-I noticed several problems with the data regarding street names as I began with  sampling the OSM file of Singapore. Before I go on to describe the problems I have encountered, I think it would be appropriate to briefly mention the typical format of a street name in Singapore:
+I noticed several problems with the data regarding street names as I began with  sampling the OSM file of Singapore. Before I go on to describe the problems I have encountered, I think it would be appropriate to briefly mention the typical format of a street name in Singapore first.
+
+### <a name="street-name-format"></a>STREET NAME FORMAT
 
 * _Proper Name_, followed by the _**Street Type**_ (e.g. _MacKenzie **Road**_)
 * _**Street Type**_, followed by the _Proper Name_ (e.g. _**Lorong** Ah Soo_)
@@ -21,7 +23,7 @@ These two formats display the multi-cultural aspect of Singapore. The first form
 
 <div style="page-break-after: always;"></div>
 
-## 2. PROBELMS ENCOUNTERED
+### DATA-CLEANING PROBLEMS
 
 The problems I have encountered during the data-cleaning process include: 
 
@@ -31,7 +33,7 @@ The problems I have encountered during the data-cleaning process include:
 
 Elaborations on these problems follow next.
 
-### Inconsistent Formats
+#### Inconsistent Formats
 
 There are 39 documents whose street name entries have shown inconsistency from the expected format. They are broadly categorized by:
 
@@ -44,7 +46,7 @@ There are 39 documents whose street name entries have shown inconsistency from t
 * The entry is not a street name.
   * (e.g. _310074_, _656289_, _Park Regis Singapore_)
 
-I use regular expressions (regex) to screen for inconsistent street names, and below are code snippets describing the regex:
+I use regular expressions (regex) to screen for inconsistent street names. Below are code snippets to illustrate a couple of regular expressions I use. A complete list of regex I use to screen out inconsistent entries is located in `2_screen.py` under the folder `Python_Codes`.
 
 ```python
 import re
@@ -56,35 +58,8 @@ ic0 = re.compile("(^|.*\s)[a-zA-Z].*\s[a-zA-Z].*")
 # Inconsistent form #1: House units #XX-YY or XX-YY
 ic1 = re.compile(".*[0-9]?[#-][0-9].*") 
 
-# Inconsistent form #2: Building number Blk XX
-ic2 = re.compile("^[bB][lL][oO]?[cC]?[kK].*") 
-
-# Inconsistent form #3: Building/house number XX or postcode (Not a street name)
-ic3 = re.compile("^[0-9].*") 
-
-# Inconsistent form #4: Not likely a street name if "Singapore" is in the entry
-ic4 = re.compile(".*[sS]ingapore.*") 
-
 ```
-
-Hence I create a function that returns `True` if a street name entry within a document is consistent with the expected format.
-
-```python
-# Function to check for consistency
-def is_Consistent(street_name):
-    t0 = ic0.match(street_name) is not None
-    t1 = ic1.match(street_name) is None
-    t2 = ic2.match(street_name) is None
-    t3 = ic3.match(street_name) is None
-    t4 = ic4.match(street_name) is None
-
-    # Return True or False
-    return all([t0, t1, t2, t3, t4])
-```
-
-Unfortunately, another problem surfaced when I use this function. I discovered several documents bear the street name _Queensway_, which is entirely valid. This special case requires me create a new variable called **SCREENED** to exclude valid entries from the consistency check.
-
-Cleaning the problematic entries programatically would be difficult. So I have chosen to, via python scripting, clean these entries "manually" with the following strategy:
+Cleaning these problematic entries programatically would be difficult. So I have chosen to, via python scripting, clean these entries "manually" with the following strategy:
 
 1. (Python) Extract the parent xml element whose `addr:street` entry is tested inconsistent. Element is saved to a text file.  
 _To make the process programmatically easy, the filenames are uniquely identified by the "tag type" followed by the "element ID". I also create another file named **INDEX** to store those filenames in a list._
@@ -94,15 +69,15 @@ _To make the process programmatically easy, the filenames are uniquely identifie
   - If the location and the address information do not corroborate, mark the problem filename entry in **INDEX** by prefixing it with "***", say.
 3. (Python) When the "tag type" and the "element ID" match up with the list of filenames in **INDEX**, the python script will upload the contents of the matching file and replace the parent xml element. If matched to the marked filename, the parent element will be skipped over and not stored.
 
-As a result, the element that has the street name entry _Street 81_ is dropped because it dose not contain sufficient address information.
+Following this routine, the element that has the street name entry _Street 81_ is dropped because it dose not contain sufficient address information.
 
-### <a name="problem-map"></a>Problematic Mapping Text
+#### <a name="problem-map"></a>Problematic Mapping Text
 
 In this dataset, _St_ and _St._ are the only problematic ones. Since _St_ and _St._ are also the mapping texts for "Street", it would be disastrous for original entries such as _St Andrew's Road_ or _St. George's Lane_. The mapped entries would have been changed to _**Street** Andrew's Road_ or _**Street** George's Lane_.
 
 The resolution I have sought for this particular problem is laid out in the [**"Saint" streets**](#saint-streets) segment.
 
-### Formatting Atypical Names
+#### Formatting Atypical Names
 
 I face with additional challenges for the following situation:
 
@@ -116,62 +91,13 @@ I face with additional challenges for the following situation:
 
 ###### Special Capitalization
 
-For street name capitalization, I typically would just use `string.capwords()`. 
-
-```python
-import string
-
-string.capwords(st_name) # st_name is the street name entry
-```
-
-But there are entries that do not follow the typical capitalization rules. So I turn to regex for those special cases to make sure the capital letters are showing up correctly in the street name entries. Below are the code snippets for the case of "Mc" and "Mac" names:
-
-```python
-# Regex to match 'Mc' and 'Mac' street names
-cap1 = re.compile("(^|.*\s)([mM]a?c)(.*)") 
-
-# Formatting function
-def format_McMac(street_name):
-    g = cap1.search(street_name)
-    if g is not None:
-        return g.group(1) + string.capwords(g.group(2)) + string.capwords(g.group(3))
-    else:
-        return street_name
-```
-In similar fashion, I do the same for the other special cases. Below are the regex for them:
-
-```python
-# Regex for other special capitalization
-cap2 = re.compile("(^|.*\s)([dolDOL]')(.*)") # After D', O' or L'
-cap3 = re.compile("(.*[a-z]-)([a-zA-Z].*)") # After dash
-```
+These are entries that do not follow the typical capitalization rules. Regex is used for these special cases to make sure the capital letters are showing up correctly in the street name entries. The regular expressions can be found in `6_clean_data.py` under the folder `Python_Codes`.
 
 ###### <a name="saint-streets"></a>"Saint" Streets
 
 I have chosen to use "St." as the proper form because the non-abbreviated form, "Saint", is somewhat an awkward representation. But as mentioned [earlier](#problem-map), "St." is in conflict with the mapping text for "Street". 
 
-The solution is simple. Instead of passing the whole street name entry to the mapping function, `mapName()`, I pass only the text that comes after "St." for mapping. The replacement of "St." to "Street" is thus avoided.
-
-```python
-# Regex for "Saint" streets
-st1 = re.compile("(^|.*\s)([sS]t.?|[sS]aint)(\s[A-Za-z].*)")
-
-# Function to check street name
-def is_SaintStreet(street_name):
-    return st1.match(street_name) is not None
-
-# Here, st_name is the street name entry. 
-# (Code is not displayed where ... is shown.) 
-...
-	if is_SaintSt(st_name):
-	    g = st1.search(st_name)
-	    st_name = g.group(1) + "St." + mapName(g.group(3))
-	else:
-	    # Mapping the whole street name entry
-	    st_name = mapName(st_name)    
-...
-    
-```
+The solution is simple. A street name entry is first tested via a function whether it is a "Saint" street. If the entry is a "Saint" street, only the text that comes after "St." will be passed on to the mapping function. The replacement of "St." to "Street" is thus avoided. This routine can be found in `6_clean_data.py` under the folder `Python_Codes`.
 
 ## 3. DATA OVERVIEW
 
@@ -212,32 +138,20 @@ $ mongoimport -d osm -c sgp --file sinagpore.xml.json
 > db.sgp.distinct("created.user").length
 1087
 ```
-###### Number of unique amenity types
-```mongo                                                
-> db.sgp.distinct("amenity").length
-96
-```
-
-<div style="page-break-after: always;"></div>
-
-###### Top 10 amentities by count
+###### Top 5 amentities by count
 ```mongo                                                
 > db.sgp.aggregate([{"$match":{"amenity":{"$exists":1}}}, 
 ... {"$group":{"_id":"$amenity","count":{"$sum":1}}}, 
 ... {"$sort":{"count":-1}}, 
-... {"$limit":10}])
+... {"$limit":5}])
 { "_id" : "parking", "count" : 1623 }
 { "_id" : "restaurant", "count" : 974 }
 { "_id" : "school", "count" : 437 }
 { "_id" : "taxi", "count" : 314 }
 { "_id" : "place_of_worship", "count" : 281 }
-{ "_id" : "swimming_pool", "count" : 263 }
-{ "_id" : "cafe", "count" : 249 }
-{ "_id" : "fast_food", "count" : 211 }
-{ "_id" : "toilets", "count" : 171 }
-{ "_id" : "fuel", "count" : 166 }
 
 ```  
+<div style="page-break-after: always;"></div>
 
 ## 4. FURTHER EXPLORATION
 
@@ -291,7 +205,6 @@ From MongoDB documentation, I gather that I should index the `"pos"` field with 
 ```
 Below is the query on amenities near my middle school. I am limiting the query to return two results. 
 
-###### 
 ```mongo
 > db.sgp.find(
 ...      {"pos": {"$near": vs[0].pos},
